@@ -10,6 +10,10 @@
   <body>
     <main>
       <div class="overall">
+        <div class="stuff">
+          <input id="youtube" type="text" name="search">
+          <button id="yb">Enter</button>
+        </div>
         <div class="center">
           <div class="card">
             <div class="container">
@@ -18,6 +22,7 @@
               </div>
             </div>
           </div>
+          <div id="youtubeas"></div>
         </div>
       </div>
     </main>
@@ -26,5 +31,6 @@
       const socket = io();
     </script>
 	  <script src="/index.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
   </body>
 </html>

@@ -39,6 +39,16 @@ io.on("connection", (socket) => {
     let word = words[Math.floor(Math.random() * words.length)]
     trigger(word);
   });
+
+  socket.on("play", (arg) => {
+    try {
+      const url = new URL(arg);
+      io.emit('play', url.searchParams.get('v'))
+    }
+    catch{
+
+    }
+  });
 });
 
 
